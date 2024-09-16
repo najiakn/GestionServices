@@ -8,6 +8,6 @@ public class TypeService {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     int id;
-    String nomService;
+    String nomType;
 
 }

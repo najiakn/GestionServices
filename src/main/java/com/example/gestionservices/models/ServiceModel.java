@@ -14,7 +14,7 @@ import java.sql.Date;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="ServiceModel")
+//@Table(name="ServiceModel")
 public class ServiceModel {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
@@ -23,7 +23,7 @@ public class ServiceModel {
    private Date dateService;
    private String adresseService;
     @ManyToOne
-    @JoinColumn(name="nomService",nullable=false)
+    @JoinColumn(name="idType",nullable=false)
     private TypeService typeService;
 
 
